@@ -1,3 +1,6 @@
+import 'package:covid19/ui/DetailsView.dart';
+import 'package:covid19/ui/HomeScreen.dart';
+import 'package:covid19/ui/NavigationScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,11 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Covid19',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: NavigationScreens(),
     );
   }
 }
